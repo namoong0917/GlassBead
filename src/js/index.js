@@ -48,7 +48,7 @@ scene.add(glassBead);
 renderer.render(scene, camera); // scene 과 camera 정보를 담아 화면에 출력 연결
 
 // 배경 관리
-const loader = new RGBELoader().setPath("../../src/data/");
+const loader = new RGBELoader().setPath("../../src/asset/");
 // 배경
 const bgTexture = loader.load("fireplace_4k.hdr", () => {
   const rt = new THREE.WebGLCubeRenderTarget(bgTexture.image.height);

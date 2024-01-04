@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Study-Three</title>
     <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/loading.css" />
     <!-- es.module.shims 폴리필 -->
     <script
       async
@@ -20,7 +21,18 @@
     </script>
   </head>
   <body style="overflow: hidden">
+    <div id="load_wrap">
+      <img src="/src/asset/icons8-loading.gif" alt="loading" />
+    </div>
     <canvas id="result" style="width: 100vw; height: 100vh"></canvas>
     <script src="./src/js/index.js" type="module"></script>
+    <script>
+      window.onload = () => {
+        const loadingWrap = document.getElementById("load_wrap");
+        setTimeout(() => {
+          loadingWrap.style.display = "none";
+        }, 1000);
+      };
+    </script>
   </body>
 </html>
