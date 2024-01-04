@@ -42,7 +42,7 @@ const material = new THREE.MeshPhysicalMaterial({
   transmission: 1,
   envMapIntensity: 1,
 });
-console.log(material);
+// console.log(material);
 const glassBead = new THREE.Mesh(ballGeo, material);
 scene.add(glassBead);
 renderer.render(scene, camera); // scene 과 camera 정보를 담아 화면에 출력 연결

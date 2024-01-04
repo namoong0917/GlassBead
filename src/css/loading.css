@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-#load_wrap {
+#loading {
   width: 100%;
   height: 100%;
   top: 0;
@@ -13,7 +13,7 @@
   text-align: center;
 }
 
-#load_wrap > img {
+#loading > img {
   position: absolute;
   top: 50%;
   left: 50%;

@@ -21,17 +21,17 @@
     </script>
   </head>
   <body style="overflow: hidden">
-    <div id="load_wrap">
+    <div id="loading">
       <img src="/src/asset/icons8-loading.gif" alt="loading" />
     </div>
     <canvas id="result" style="width: 100vw; height: 100vh"></canvas>
     <script src="./src/js/index.js" type="module"></script>
     <script>
       window.onload = () => {
-        const loadingWrap = document.getElementById("load_wrap");
+        const loadingWrap = document.getElementById("loading");
         setTimeout(() => {
           loadingWrap.style.display = "none";
-        }, 1000);
+        }, 3000);
       };
     </script>
   </body>
