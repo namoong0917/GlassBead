@@ -1,6 +1,6 @@
 # Making glass beads with Three.js
 
-![threeJs](https://github.com/namoong0917/GlassBead/assets/103318401/985bff2b-3fca-406d-8c7b-50856b98bae9)
+<img src="https://github.com/namoong0917/GlassBead/assets/103318401/9488e046-bff5-4714-a4b0-dca54f6ba2dd">
 
 ### Three.js 를 이용한 유리구슬 만들기
 
