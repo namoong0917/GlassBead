@@ -50,13 +50,13 @@ renderer.render(scene, camera); // scene 과 camera 정보를 담아 화면에 �
 // 배경 관리
 const loader = new RGBELoader().setPath("../../src/asset/");
 // 배경
-const bgTexture = loader.load("fireplace_4k.hdr", () => {
+const bgTexture = loader.load("fireplace_2k.hdr", () => {
   const rt = new THREE.WebGLCubeRenderTarget(bgTexture.image.height);
   rt.fromEquirectangularTexture(renderer, bgTexture);
   scene.background = rt.texture;
 });
 // 도형 반사
-loader.load("fireplace_4k.hdr", function (texture) {
+loader.load("fireplace_2k.hdr", function (texture) {
   texture.mapping = THREE.EquirectangularReflectionMapping;
   scene.environment = texture;
 });
